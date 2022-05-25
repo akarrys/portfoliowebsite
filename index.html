@@ -1,312 +1,361 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en">
+<html lang="en">
 
 <head>
-    <meta http-equiv="Content-Security-Policy"
-      content="default-src 'self'; img-src https://*; child-src 'none';">
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Artamis Karrys Portfolio</title>
-    <link rel="shortcut icon" type="image/png" href="images/favicon.png">
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
-    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>akarrys</title>
+    <meta name="description" content="Portfolio for Artamis Karrys" />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap" rel="stylesheet" />
 </head>
 
 <body>
-    <div id="mobile-menu-open" class="shadow-large">
-        <i class="fa fa-bars" aria-hidden="true"></i>
-    </div>
-    <!-- End #mobile-menu-toggle -->
-    <header>
-        <div id="mobile-menu-close">
-            <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
+    <header class="header">
+        <div class="header__content">
+            <div class="header__logo-container">
+                <div class="header__logo-img-cont">
+                    <img src="./assets/png/mysiteimage.png" alt="Artamis Karrys Logo Image" class="header__logo-img" />
+                </div>
+                <span class="header__logo-sub">AK</span>
+            </div>
+            <div class="header__main">
+                <ul class="header__links">
+                    <li class="header__link-wrapper">
+                        <a href="./index.html" class="header__link"> Home </a>
+                    </li>
+                    <li class="header__link-wrapper">
+                        <a href="./index.html#about" class="header__link">About </a>
+                    </li>
+                    <li class="header__link-wrapper">
+                        <a href="./index.html#projects" class="header__link">
+                Projects
+              </a>
+                    </li>
+                    <li class="header__link-wrapper">
+                        <a href="./index.html#contact" class="header__link"> Contact </a>
+                    </li>
+                </ul>
+                <div class="header__main-ham-menu-cont">
+                    <img src="./assets/svg/ham-menu.svg" alt="hamburger menu" class="header__main-ham-menu" />
+                    <img src="./assets/svg/ham-menu-close.svg" alt="hamburger menu close" class="header__main-ham-menu-close d-none" />
+                </div>
+            </div>
         </div>
-        <ul id="menu" class="shadow">
-            <li>
-                <a href="#about">About Me</a>
-            </li>
-            <li>
-                <a href="#experience">Work Experience</a>
-            </li>
-            <li>
-                <a href="#education">Education</a>
-            </li>
-            <li>
-                <a href="#projects">Personal Projects</a>
-            </li>
-            <li>
-                <a href="#skills">Programming Languages</a>
-            </li>
-        </ul>
+        <div class="header__sm-menu">
+            <div class="header__sm-menu-content">
+                <ul class="header__sm-menu-links">
+                    <li class="header__sm-menu-link">
+                        <a href="./index.html"> Home </a>
+                    </li>
+
+                    <li class="header__sm-menu-link">
+                        <a href="./index.html#about"> About </a>
+                    </li>
+
+                    <li class="header__sm-menu-link">
+                        <a href="./index.html#projects"> Projects </a>
+                    </li>
+
+                    <li class="header__sm-menu-link">
+                        <a href="./index.html#contact"> Contact </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </header>
-    <!-- End header -->
+    <section class="home-hero">
+        <div class="home-hero__content">
+            <h1 allign="center" class="heading-primary"> Hello 👋, my name is Artamis Karrys.</h1>
+            <div class="home-hero__info">
+                <p allign="center" class="text-primary">
+                    Passionate software deveoper and cybersecurity student.
+                </p>
 
-    <div id="lead">
-        <div id="lead-content">
-            <h1>Artamis Karrys</h1>
-            <h2>Cybersecurity Student/ Software Developer</h2>
-            <style>
-                .btn {
-  
-                    background-color: DodgerBlue;
-  
-                    border: none;
-  
-                    color: white;
- 
-                    padding: 12px 30px;
- 
-                    cursor: pointer;
-  
-                    font-size: 20px;
+            </div>
+            <div class="home-hero__cta">
+                <a href="./#projects" class="btn btn--bg">Projects</a>
+            </div>
+        </div>
+        <div class="home-hero__socials">
+            <div class="home-hero__social">
+                <a href="https://www.linkedin.com/in/artamiskarrys/" target="_blank" class="home-hero__social-icon-link">
+                    <img src="./assets/png/linkedinsocial.png" alt="icon" class="home-hero__social-icon" />
+                </a>
+            </div>
+            <div class="home-hero__social">
+                <a href="https://github.com/akarrys" target="_blank" class="home-hero__social-icon-link">
+                    <img src="./assets/png/githubsocial.png" alt="icon" class="home-hero__social-icon" />
+                </a>
+            </div>
 
+        </div>
+        <div class="home-hero__mouse-scroll-cont">
+            <div class="mouse"></div>
+        </div>
+    </section>
+    <section id="about" class="about sec-pad">
+        <div class="main-container">
+            <h2 class="heading heading-sec heading-sec__mb-med">
+                <span class="heading-sec__main">About Me</span>
+                <span class="heading-sec__sub">Here is where you will find out info about me, programming skills, and what I primarily do on my days away from technology.
+
+          
+        
+          </span>
+            </h2>
+            <div class="about__content">
+                <div class="about__content-main">
+                    <h3 class="about__content-title">Bio:</h3>
+                    <div class="about__content-details">
+                        <p class="about__content-details-para">
+                            Hello my name is Artamis Karrys I am a dual citizen and a conjoined twin by the liver. I grew up playing hockey primarily. My current activites outside of tech include going to the gym, building PC's, hiking, and spending time with my family.
+                        </p>
+                        <p class="about__content-details-para">
+                            After my career in healthcare as an EMT for 2 years and being a hockey player for 15 years, I decided to pursue my passion for technology. I have always considered myself a learner and I continue to study and apply new concepts everyday. I started to
+                            lose passion for healthcare near the end of my career which turned me to helping others electronically.
+                        </p>
+                        <p class="about__content-details-para">My first programming language was Java. I fell in love with the process of learning software development principles. I then started doing projects based on whatever I found interesting and challenging. There is no greater feeling
+                            than creating a secure, efficient, robust, and adaptable program to display as your own.</p>
+                        <p class="about__content-details-para">I started to develop over time more and more projects. I then found a keen interest in cybersecurity. I decided to start learning and applying ethical hacking principles. Ive practiced pen testing for friends websites with consent.
+                            I currently use Kali Linux for my practice environment. I am currently enrolled in college and going into my junior year. I am pursuing a BSc in Cybersecurity. My projected graduation is May 2024.
+                        </p>
+                    </div>
+                    <a href="./#contact" class="btn btn--med btn--theme dynamicBgClr">Contact</a
+            >
+          </div>
+          <div class="about__content-skills">
+            <h3 class="about__content-title">My Skills</h3>
+            <div class="skills">
+              <div class="skills__skill">HTML</div>
+              <div class="skills__skill">CSS</div>
+              <div class="skills__skill">JavaScript</div>
+              <div class="skills__skill">SASS</div>
+              <div class="skills__skill">Java</div>
+              <div class="skills__skill">MySQL</div>
+              <div class="skills__skill">Postman</div>
+              <div class="skills__skill">Kali Linux</div>
+              <div class="skills__skill">Android</div>
+              <div class="skills__skill">Burpsuite</div>
+              <div class="skills__skill">Web Development</div>
+              <div class="skills__skill">IntellijIDE</div>
+              <div class="skills__skill">Visual Studio</div>
+              <div class="skills__skill">Rest API's</div>
+              <div class="skills__skill">Spring boot</div>
+
+
+
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="projects" class="projects sec-pad">
+      <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-bg">
+          <span class="heading-sec__main">Projects</span>
+          <span class="heading-sec__sub">
+            A collection of all my personal projects that are also on github.
+          </span>
+        </h2>
+
+        <div class="projects__content">
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img
+                src="./assets/jpeg/discord.jpeg"
+                alt="Software Screenshot"
+                class="projects__row-img"
+                loading="lazy"
+              />
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">Discord Music Bot</h3>
+              <p class="projects__row-content-desc">
+                Discord Music Bot made with discord developer portal. The bot takes a prefix command + a youtube link and plays the song linked in any channel as long as user is in voice channel. The bot was programmed in Java and uses Discords wrapper JDA. Discord bot is available on github.
+              </p>
+              <a
+                href="https://github.com/akarrys/musicbotbyAK"
+                class="btn btn--med btn--theme dynamicBgClr"
+                target="_blank"
+                >github</a
+              >
+            </div>
+          </div>
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img
+                src="./assets/jpeg/slack.jpeg"
+                alt="Software Screenshot"
+                class="projects__row-img"
+                loading="lazy"
+              />
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">Slack Bot</h3>
+              <p class="projects__row-content-desc">
+                Simple slack robot made using Cloudflares workers and Cloudflares Wrangler CLI. The bot was written in java script. Bot makes use of GitHub webhooks to send messages to a Slack channel when issues are updated or created, and allow users to write a command to look up GitHub issues from inside Slack. The bot is hosted serverless and able to be summoned 24/7. Summoned by using this syntax, /issue owner/repo#issue_number.
+              </p>
+              <a
+                href="https://github.com/akarrys/slackbotwithcloudflare"
+                class="btn btn--med btn--theme dynamicBgClr"
+                target="_blank"
+                >github</a
+              >
+            </div>
+          </div>
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img
+                src="./assets/jpeg/springboot.jpeg"
+                alt="Software Screenshot"
+                class="projects__row-img"
+                loading="lazy"
+              />
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">MySQL Crud Rest Api Spring Boot application.
+              </h3>
+              <p class="projects__row-content-desc">
+               First REST api project created to learn and apply an understanding of Spring restful services. This project was made with Java Version 17 and Spring Boot with Maven for a POM. Used MySQL for DB and lDAP for connection, no SSH. Api calls were made with Postman. Dependencies: 1. Thymeleaf 2. Spring data jpa 3. MySQL driver 4. Lombok.
+
+              </p>
+              <a
+                href="https://github.com/akarrys/demo-rest-API-MySQL"
+                class="btn btn--med btn--theme dynamicBgClr"
+                target="_blank"
+                >github</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="contact sec-pad dynamicBg">
+      <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-med">
+          <span class="heading-sec__main heading-sec__main--lt">Contact</span>
+          <span class="heading-sec__sub heading-sec__sub--lt">
+            Click Contact button to access socials and download resume.
+          </span>
+        </h2>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.dropbtn {
+  background-color: #000;
+  color: white;
+  padding: 10px;
+  font-size: 40px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: chocolate;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 8px 13px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+</style>
+</head>
+<body>
+
+
+<div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Contact</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="https://www.linkedin.com/in/artamiskarrys/" target="_blank">Linkedin</a>
+                    <a href="https://github.com/akarrys" target="_blank">Github</a>
+                    <a href="/assets/pdf/my-resume.pdf" download="my-resume">Resume</a>
+                </div>
+            </div>
+
+            <script>
+                /* When the user clicks on the button, 
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                toggle between hiding and showing the dropdown content */
+                function myFunction() {
+                    document.getElementById("myDropdown").classList.toggle("show");
                 }
-            </style>
-            <meta charset="UTF-8">
-            <title>Download Button</title>
-            <a href="/images/websiteresume.pdf" download="my-resume">
-		Download Resume
-	</a>
+
+                // Close the dropdown if the user clicks outside of it
+                window.onclick = function(event) {
+                    if (!event.target.matches('.dropbtn')) {
+                        var dropdowns = document.getElementsByClassName("dropdown-content");
+                        var i;
+                        for (i = 0; i < dropdowns.length; i++) {
+                            var openDropdown = dropdowns[i];
+                            if (openDropdown.classList.contains('show')) {
+                                openDropdown.classList.remove('show');
+                            }
+                        }
+                    }
+                }
+            </script>
+
         </div>
-            
-            
-                
-        <!-- End #lead-content -->
-
-        <div id="lead-overlay"></div>
-
-        <div id="lead-down">
-            <span>
-                <i class="fa fa-chevron-down" aria-hidden="true"></i>
-            </span>
-        </div>
-        <!-- End #lead-down -->
-    </div>
-    <!-- End #lead -->
-
-    <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <h2 class="heading">About Me</h2>
+    </section>
+    <footer class="main-footer">
+        <div class="main-container">
+            <div class="main-footer__upper">
+                <div class="main-footer__row main-footer__row-1">
+                    <h2 class="heading heading-sm main-footer__heading-sm">
+                        <span>Social</span>
+                    </h2>
+                    <div class="main-footer__social-cont">
+                        <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/artamiskarrys/">
+                            <img class="main-footer__icon" src="./assets/png/linkedinsocial.png" alt="icon" />
+                        </a>
+                        <a target="_blank" rel="noreferrer" href="https://github.com/akarrys">
+                            <img class="main-footer__icon" src="./assets/png/githubsocial.png" alt="icon" />
+                        </a>
+                    </div>
                 </div>
-                <div class="col-md-8">
-                    <p><h1 align="left">Hello 👋, I'm Artamis Karrys. A passionate software developer / pen-tester from USA.</h1>
-                    <p align="left">  <ul>
-    <li>🔭 I’m currently seeking a job or intern</li>
-    <li>🌱 I’m currently learning Pentesting tools and strategies</li>
-    <li>👨&zwj;💻 All of my projects are available on my github</li>
-    <li>💬Ask me about Java,C#,HTML,JS,ReactJS,Burpsuite,Wireshark,Kali-Linux</li>
-  </ul>
-  </p></p>
-             
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End #about -->
-
-    <div id="experience" class="background-alt">
-        <h2 class="heading">Work Experience</h2>
-        <div id="experience-timeline">
-            <div data-date="Oct 2020 – Jul 2021">
-                <h3>American Medical Response</h3>
-                <h4>Emergency Medical Technician</h4>
-                <p>
-                    • Respond to emergency calls to provide efficient and immediate care to the critically ill. • Reliably transport patients to various medical facilities around the Phoenix valley. • Handle confidential patient databases and information.
-                </p>
-            </div>
-
-            <div data-date="Aug 2018 – Apr 2020">
-                <h3>Carrabas Italian Grill</h3>
-                <h4>Dining Room Server</h4>
-                <p>
-                    • Provide friendly and attentive service to all patrons of the restaurant in a timely and efficient manner. • Exceeded sales targets by 6% by up-selling promoted appetizers and drinks based on customer input. • Assisted colleagues during high volume times
-                    to ensure quality experiences for customers.
-                </p>
-            </div>
-
-            <div data-date="May 2019 – Jan 2020">
-                <h3>EOS fitness</h3>
-                <h4>Personal Trainer</h4>
-                <p>
-                    • Assist clients in creating personalized exercise routines and healthy lifestyle habits. • Modify existing client routines to ensure customer satisfaction and goals are reached.
-                </p>
-            </div>
-        </div>
-    </div>
-    <!-- End #experience -->
-
-    <div id="education">
-        <h2 class="heading">Education</h2>
-        <div class="education-block">
-            <h3>Arizona State University - College of Interdisciplinary Arts and Sciences </h3>
-            <span class="education-date">Aug 2020 - May 2024</span>
-            <h4>Bachelor of Science in Applied Computing with an emphasis on Cybersecurity</h4>
-            <p>
-                • Relevant Coursework: Data Structures, Advanced Algorithms, Object-Oriented Programming, Databases, Compilers.
-            </p>
-        </div>
-        <!-- End .education-block -->
-
-    </div>
-    <!-- End #education -->
-
-    <div id="projects" class="background-alt">
-        <h2 class="heading"> Personal Projects</h2>
-        <div class="container">
-            <div class="row">
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/thisone.jpg" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>Discord Music Bot</h3>
-                        <p>
-                            Discord Music Bot made with discord developer portal. The bot takes a prefix as a command + a youtube link and plays the song/s in any channel as long as user is in voice channel. The bot was programmed in Java and uses Discords REST API JDA. Discord
-                            bot is available on github.
-
-
-
-                        </p>
-                        <a href="https://github.com/akarrys/musicbotbyAK">View Project</a>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/slack.jpg" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>Slack Cloudflare hosted Bot</h3>
-                        <p>
-                            Simple slack robot made using Cloudflares workers product and Cloudflares Wrangler CLI. The bot was written in java script. Bot makes use of GitHub webhooks to send messages to a Slack channel when issues are updated or created, and allow users to write
-                            a command to look up GitHub issues from inside Slack.
-                        </p>
-                        <a href="https://github.com/akarrys/slackbotwithcloudflare">View Project</a>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-                 <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/slack.jpg" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>Android Portfolio app</h3>
-                        <p>
-                            Android app from scratch that displays my website.
-                            
-                            
-                            
-                            
-                        </p>
-                        <a href="https://github.com/akarrys/portfolioapp">View Project</a>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-            </div>
-             <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/slack.jpg" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3> MySQL Crud Rest Api Spring Boot application. </h3>
-                        <p>
-                            Description:
-First REST api project created to learn and apply an understanding of Spring restful services. This project was made with Java Version 17
-and Spring Boot with Maven for a POM. Used MySQL for DB and lDAP for connection, no SSH. Api calls were made with Postman.
-
-Dependencies:
-1. Thymeleaf
-2. Spring data jpa
-3. MySQL driver
-4. Lombok
-                        </p>
-                        <a href="https://github.com/akarrys/demo-rest-API-MySQL">View Project</a>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-        </div>
-    </div>
-    <!-- End #projects -->
-
-    <div id="skills">
-        <h2 class="heading">Programming Languages</h2>
-        <ul>
-            <li>JavaScript</li>
-            <li>Python</li>
-            <li>Node.js</li>
-            <li>React</li>
-            <li>Java</li>
-            <li>C#</li>
-            <li>Linux</li>
-
-        </ul>
-    </div>
-    <!-- End #skills -->
-
-    <div id="networksecuritytools&frameworks">
-
-        <h2 class="heading">Network Security Tools & IDE's</h2>
-        <ul>
-            <li>Wireshark</li>
-            <li>Burp Suite</li>
-            <li>SETOOLKIT</li>
-            <li>Kali Linux</li>
-            <li>Eclipse</li>
-            <li>Intellij</li>
-            <li>Visual Studio</li>
-            <li>Android Studio</li>
-
-        </ul>
-    </div>
-    <!-- End #networksecuritytools&frameworks -->
-
-
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-5 copyright">
-                    <p>
-                        Copyright &copy; <span id="current-year">2022</span> Artamis Karrys
+                <div class="main-footer__row main-footer__row-2">
+                    <h4 class="heading heading-sm text-lt">Artamis Karrys</h4>
+                    <p class="main-footer__short-desc">
+                        Passionate software deveoper and cybersecurity student.
                     </p>
                 </div>
-                <div class="col-sm-2 top">
-                    <span id="to-top">
-                        <i class="fa fa-chevron-up" aria-hidden="true"></i>
-                    </span>
-                </div>
-                <div class="col-sm-5 social">
-                    <ul>
-                        <li>
-                            <a href="https://github.com/akarrys" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
-                        </li>
-
-                        <li>
-                            <a href="https://www.linkedin.com/in/artamiskarrys/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                        </li>
-
-                    </ul>
-                </div>
             </div>
+
+            <div class="main-footer__lower">
+                &copy; Copyright 2022. Made by
+                <a rel="noreferrer" target="_blank" href="https://artamiskarrys.com">Artamis Karrys</a
+          >
         </div>
+      </div>
     </footer>
-    <!-- End footer -->
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
-    <script src="js/scripts.min.js"></script>
-</body>
-
+    <script src="./index.js"></script>
+  </body>
 </html>
