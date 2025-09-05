@@ -3,8 +3,7 @@
 
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Artamis Karrys</title>
     <meta name="description" content="Portfolio for Artamis Karrys" />
 
@@ -24,7 +23,7 @@
                 </div>
                 <span class="header__logo-sub">Artamis K.</span>
             </div>
-            <div class="header__main">
+            <nav class="header__main" aria-label="Primary">
                 <ul class="header__links">
                     <li class="header__link-wrapper">
                         <a href="./index.html" class="header__link"> Home </a>
@@ -41,13 +40,13 @@
                         <a href="./index.html#contact" class="header__link"> Contact </a>
                     </li>
                 </ul>
-                <div class="header__main-ham-menu-cont">
-                    <img src="./assets/svg/ham-menu.svg" alt="hamburger menu" class="header__main-ham-menu" />
-                    <img src="./assets/svg/ham-menu-close.svg" alt="hamburger menu close" class="header__main-ham-menu-close d-none" />
-                </div>
-            </div>
+                <button class="header__main-ham-menu-cont" aria-label="Open menu" aria-controls="mobile-menu" aria-expand="false">
+                    <img src="./assets/svg/ham-menu.svg" alt="" class="header__main-ham-menu" width="24" height="24" />
+                    <img src="./assets/svg/ham-menu-close.svg" alt="" class="header__main-ham-menu-close d-none" width="24" height="24" />
+                </button>
+            </nav>
         </div>
-        <div class="header__sm-menu">
+        <div class="header__sm-menu" id="mobile-menu" hidden>
             <div class="header__sm-menu-content">
                 <ul class="header__sm-menu-links">
                     <li class="header__sm-menu-link">
@@ -71,32 +70,32 @@
     </header>
     <section class="home-hero">
         <div class="home-hero__content">
-            <h1 allign="center" class="heading-primary"> Hello 👋, my name is Artamis Karrys.</h1>
+            <h1 class="heading-primary text-center"> Hello 👋, my name is Artamis Karrys.</h1>
             <div class="home-hero__info">
-                <p allign="center" class="text-primary">
+                <p class="text-primary text-center">
                     Passionate software developer and cybersecurity student.
                 </p>
 
             </div>
             <div class="home-hero__cta">
-                <a href="./#projects" class="btn btn--bg">Projects</a>
+                <a href="#projects" class="btn btn--bg">Projects</a>
             </div>
         </div>
-        <div class="home-hero__socials">
+        <div class="home-hero__socials" aria-label="Social links">
             <div class="home-hero__social">
-                <a href="https://www.linkedin.com/in/artamiskarrys/" target="_blank" class="home-hero__social-icon-link">
-                    <img src="./assets/png/linkedinsocial.png" alt="icon" class="home-hero__social-icon" />
+                <a href="https://www.linkedin.com/in/artamiskarrys/" target="_blank" rel="noopener noreferrer" class="home-hero__social-icon-link" aria-label="LinkedIn>
+                    <img src="./assets/png/linkedinsocial.png" alt="" class="home-hero__social-icon width="32" height="32" />
                 </a>
             </div>
             <div class="home-hero__social">
-                <a href="https://github.com/akarrys" target="_blank" class="home-hero__social-icon-link">
-                    <img src="./assets/png/githubsocial.png" alt="icon" class="home-hero__social-icon" />
+                <a href="https://github.com/akarrys" target="_blank" rel="noopener noreferrer" class="home-hero__social-icon-link" aria-label="GitHub">
+                    <img src="./assets/png/githubsocial.png" alt="" class="home-hero__social-icon" width="32" height="32" />
                 </a>
             </div>
 
         </div>
         <div class="home-hero__mouse-scroll-cont">
-            <div class="mouse"></div>
+            <div class="mouse" aria-hidden="true"></div>
         </div>
     </section>
     <section id="about" class="about sec-pad">
@@ -244,7 +243,7 @@
           <span class="heading-sec__main heading-sec__main--lt">Contact</span>
           <span class="heading-sec__sub heading-sec__sub--lt">
             Click download to download resume.
-            <a href="assets/pdf/KarrysResume.pdf" download="KarrysResume.pdf">
+            <a href="assets/pdf/KarrysResume.pdf" download="KarrysResume.pdf" class="btn btn--med btn--theme">
               <button type="button">Download Resume</button>
               </a>
           </span>
@@ -259,11 +258,11 @@
                         <span>Social</span>
                     </h2>
                     <div class="main-footer__social-cont">
-                        <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/artamiskarrys/">
-                            <img class="main-footer__icon" src="./assets/png/linkedinsocial.png" alt="icon" />
+                        <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/artamiskarrys/" aria-label="LinkedIn">
+                            <img class="main-footer__icon" src="./assets/png/linkedinsocial.png" alt="" width="24" height="24" />
                         </a>
-                        <a target="_blank" rel="noreferrer" href="https://github.com/akarrys">
-                            <img class="main-footer__icon" src="./assets/png/githubsocial.png" alt="icon" />
+                        <a target="_blank" rel="noreferrer" href="https://github.com/akarrys" aria-label="GitHub">
+                            <img class="main-footer__icon" src="./assets/png/githubsocial.png" alt="" width="24" height="24" />
                         </a>
                     </div>
                 </div>
