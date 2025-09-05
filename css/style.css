@@ -38,7 +38,7 @@ body {
     font-family: sans-serif;
     overflow-x: hidden;
     overflow-y: scroll;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'inter', 'Source Sans Pro', sans-serif;
 }
 
 a {
@@ -875,8 +875,8 @@ textarea {
 }
 
 .header__sm-menu--active {
-    visibility: hidden;
-    opacity: 0;
+    visibility: visible;
+    opacity: 1;
 }
 
 @media only screen and (max-width: 37.5em) {
@@ -1057,4 +1057,56 @@ textarea {
 .header__sm-menu[hidden] { 
   display: none !important; 
 }
+/* === Sleek Black & White theme overrides === */
+:root{
+  --bg: #0b0b0b;
+  --bg-alt: #111;
+  --text: #f7f7f7;
+  --muted: #bdbdbd;
+  --border: #1e1e1e;
+}
+
+}
+body{ background: var(--bg); color: var(--text); }
+.header{ background: var(--bg); border-bottom: 1px solid var(--border); }
+.header__link{ color: var(--text); }
+.header__link:hover{ color: var(--muted); }
+.btn, .btn--bg, .btn--theme{
+  background: #fff; color: #000; border: none;
+  padding: 0.9rem 1.6rem; border-radius: 999px; font-weight: 700;
+}
+.btn--bg:hover, .btn--theme:hover{ background:#e5e5e5; }
+.home-hero{ background: var(--bg); }
+.home-hero__content .heading-primary{ color: var(--text); }
+.text-primary{ color: var(--muted); }
+.sec-pad{ background: var(--bg); }
+.about, .projects, .contact{ background: var(--bg); }
+.projects__row{ border: 1px solid var(--border); border-radius: 16px; background: var(--bg-alt); }
+.header__sm-menu{ background: var(--bg-alt); border-top: 1px solid var(--border); }
+.header__sm-menu-link a{ color: var(--text); border-bottom: 1px solid var(--border); }
+.header__sm-menu-link a:hover{ color: var(--muted); }
+.main-footer{ background: var(--bg); border-top: 1px solid var(--border); }
+.main-footer__lower{ color: var(--muted); }
+body.no-scroll{ overflow:hidden; }
+
+/* === Section divider + Reveal animation === */
+.sec-pad { position: relative; }
+.sec-pad::before {
+  content: "";
+  position: absolute;
+  top: -1px; left: 0; right: 0; height: 1px;
+  background: linear-gradient(90deg, transparent, var(--border), transparent);
+}
+.reveal { opacity: 0; transform: translateY(24px); transition: opacity .6s ease, transform .6s ease; will-change: opacity, transform; }
+.reveal.is-visible { opacity: 1; transform: translateY(0); }
+
+@media (hover: hover) and (pointer: fine) {
+  .projects__row { transition: transform .25s ease, box-shadow .25s ease; }
+  .projects__row:hover { transform: translateY(-4px); box-shadow: 0 8px 24px rgba(0,0,0,.35); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal { transition: none; transform: none; opacity: 1; }
+}
+
 
