@@ -12,6 +12,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+
 </head>
 
 <body>
@@ -40,13 +42,13 @@
                         <a href="./index.html#contact" class="header__link"> Contact </a>
                     </li>
                 </ul>
-                <button class="header__main-ham-menu-cont" aria-label="Open menu" aria-controls="mobile-menu" aria-expand="false">
+                <button class="header__main-ham-menu-cont" aria-label="Open menu" aria-controls="mobile-menu" aria-expanded="false">
                     <img src="./assets/svg/ham-menu.svg" alt="" class="header__main-ham-menu" width="24" height="24" />
                     <img src="./assets/svg/ham-menu-close.svg" alt="" class="header__main-ham-menu-close d-none" width="24" height="24" />
                 </button>
             </nav>
         </div>
-        <div class="header__sm-menu" id="mobile-menu" hidden>
+        <div class="header__sm-menu" id="mobile-menu">
             <div class="header__sm-menu-content">
                 <ul class="header__sm-menu-links">
                     <li class="header__sm-menu-link">
@@ -69,7 +71,7 @@
         </div>
     </header>
     <section class="home-hero">
-        <div class="home-hero__content">
+        <div class="home-hero__content reveal">
             <h1 class="heading-primary text-center"> Hello 👋, my name is Artamis Karrys.</h1>
             <div class="home-hero__info">
                 <p class="text-primary text-center">
@@ -108,7 +110,7 @@
         
           </span>
             </h2>
-            <div class="about__content">
+            <div class="about__content reveal">
                 <div class="about__content-main">
                     <h3 class="about__content-title">Bio:</h3>
                     <div class="about__content-details">
@@ -165,8 +167,8 @@
           </span>
         </h2>
 
-        <div class="projects__content">
-          <div class="projects__row">
+        <div class="projects__content reveal">
+          <div class="projects__row reveal">
             <div class="projects__row-img-cont">
               <img
                 src="./assets/jpeg/discord.jpeg"
@@ -183,12 +185,12 @@
               <a
                 href="https://github.com/akarrys/musicbotbyAK"
                 class="btn btn--med btn--theme dynamicBgClr"
-                target="_blank"
+                target="_blank" rel="noopener noreferrer">
                 >github</a
               >
             </div>
           </div>
-          <div class="projects__row">
+          <div class="projects__row reveal">
             <div class="projects__row-img-cont">
               <img
                 src="./assets/jpeg/slack.jpeg"
@@ -205,12 +207,12 @@
               <a
                 href="https://github.com/akarrys/slackbotwithcloudflare"
                 class="btn btn--med btn--theme dynamicBgClr"
-                target="_blank"
+                target="_blank" rel="noopener noreferrer">
                 >github</a
               >
             </div>
           </div>
-          <div class="projects__row">
+          <div class="projects__row reveal">
             <div class="projects__row-img-cont">
               <img
                 src="./assets/jpeg/springboot.jpeg"
@@ -229,7 +231,7 @@
               <a
                 href="https://github.com/akarrys/demo-rest-API-MySQL"
                 class="btn btn--med btn--theme dynamicBgClr"
-                target="_blank"
+                target="_blank" rel="noopener noreferrer">
                 >github</a
               >
             </div>
@@ -243,16 +245,14 @@
           <span class="heading-sec__main heading-sec__main--lt">Contact</span>
           <span class="heading-sec__sub heading-sec__sub--lt">
             Click download to download resume.
-            <a href="assets/pdf/KarrysResume.pdf" download="KarrysResume.pdf" class="btn btn--med btn--theme">
-              <button type="button">Download Resume</button>
-              </a>
+            <a href="assets/pdf/KarrysResume.pdf" download="KarrysResume.pdf" class="btn btn--med btn--theme">Download Resume</a>
           </span>
         </h2>
         </div>
     </section>
     <footer class="main-footer">
         <div class="main-container">
-            <div class="main-footer__upper">
+            <div class="main-footer__upper reveal">
                 <div class="main-footer__row main-footer__row-1">
                     <h2 class="heading heading-sm main-footer__heading-sm">
                         <span>Social</span>
