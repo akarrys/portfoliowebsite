@@ -1,144 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#0b0b0b" />
-  <title>Artamis Karrys — Software Developer</title>
-  <meta name="description" content="Portfolio of Artamis Karrys — software developer with a security mindset." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+  <meta name="theme-color" content="#ffffff" />
+  <title>Artamis Karrys — Portfolio</title>
+  <meta name="description" content="Portfolio of Artamis Karrys" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <a class="skip-link" href="#content">Skip to content</a>
-
   <header class="site-header" id="site-header">
     <div class="container header-inner">
-      <a href="#" class="logo" aria-label="Home">
+      <a href="#home" class="logo" aria-label="Home">
         <img src="./assets/png/mysiteimage.png" alt="" width="40" height="40" />
         <span>Artamis K.</span>
       </a>
 
-      <nav class="nav" aria-label="Primary">
-        <button class="nav__toggle" aria-controls="nav-menu" aria-expanded="false" type="button">
-          <img src="./assets/svg/ham-menu.svg" alt="" class="icon-open" width="24" height="24" />
-          <img src="./assets/svg/ham-menu-close.svg" alt="" class="icon-close" width="24" height="24" />
-          <span class="sr-only">Toggle menu</span>
+      <nav class="site-nav" aria-label="Primary">
+        <button class="nav-toggle" aria-controls="nav-menu" aria-expanded="false" type="button">
+          <img src="./assets/svg/ham-menu.svg" class="icon-open" alt="" width="22" height="22" />
+          <img src="./assets/svg/ham-menu-close.svg" class="icon-close" alt="" width="22" height="22" />
+          <span class="visually-hidden">Menu</span>
         </button>
 
-        <div class="nav__overlay" hidden></div>
-
-        <ul id="nav-menu" class="nav__menu" role="menu">
-          <!-- NOTE: buttons (not anchors) => JS handles precise scrolling -->
-          <li role="none"><button class="nav__btn" role="menuitem" data-target="#home" type="button">Home</button></li>
-          <li role="none"><button class="nav__btn" role="menuitem" data-target="#about" type="button">About</button></li>
-          <li role="none"><button class="nav__btn" role="menuitem" data-target="#skills" type="button">Skills</button></li>
-          <li role="none"><button class="nav__btn" role="menuitem" data-target="#projects" type="button">Projects</button></li>
-          <li role="none"><button class="nav__btn" role="menuitem" data-target="#contact" type="button">Contact</button></li>
-
-          <!-- More dropdown -->
-          <li class="menu-item menu-item--has-dropdown" role="none">
-            <button
-              class="dropdown__toggle"
-              aria-haspopup="true"
-              aria-expanded="false"
-              aria-controls="more-submenu"
-              type="button">
-              More <span class="dropdown__caret" aria-hidden="true">▾</span>
-            </button>
-            <ul id="more-submenu" class="dropdown" hidden role="menu">
-              <li role="none"><a role="menuitem" href="assets/pdf/KarrysResume.pdf" download="KarrysResume.pdf">Résumé (PDF)</a></li>
-              <li role="none"><a role="menuitem" href="https://www.linkedin.com/in/artamiskarrys/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-              <li role="none"><a role="menuitem" href="https://github.com/akarrys" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-            </ul>
-          </li>
+        <ul id="nav-menu" class="nav-menu">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+          <li><a href="assets/pdf/KarrysResume.pdf" class="nav-link" download>Resume</a></li>
         </ul>
       </nav>
-
-      <!-- Theme toggle button -->
-      <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme" aria-pressed="false" title="Toggle theme" type="button">
-        <span class="theme-toggle__icon" aria-hidden="true">🌙</span>
-      </button>
     </div>
   </header>
 
-  <main id="content">
-    <section id="home" class="hero">
-      <div class="container hero-inner reveal">
-        <h1 class="h1">Hello, I’m <span class="accent">Artamis Karrys</span>.</h1>
-        <p class="lead">Software developer with a security mindset. I build reliable, maintainable systems and keep learning fast.</p>
+  <main id="home">
+    <section class="hero">
+      <div class="container hero-inner">
+        <h1 class="h1">Hi, I’m <span class="accent">Artamis Karrys</span>.</h1>
+        <p class="lead">Software developer with a security mindset. I build clean, reliable tools.</p>
         <div class="cta">
-          <button class="btn js-scroll" data-target="#projects" type="button">View Projects</button>
-          <a class="btn btn--ghost" href="assets/pdf/KarrysResume.pdf" download="KarrysResume.pdf">Download Résumé</a>
+          <a class="btn" href="#projects">View Projects</a>
+          <a class="btn btn--outline" href="assets/pdf/KarrysResume.pdf" download>Download Résumé</a>
         </div>
       </div>
     </section>
 
     <section id="about" class="section">
-      <div class="container grid grid-2 reveal">
-        <div>
-          <h2 class="h2">About Me</h2>
-          <p>I started my career in healthcare as an EMT, then moved into technology where I found a passion for secure software development and practical problem-solving.</p>
-          <p>Today I focus on building clean, resilient software and supporting teams with clear documentation and communication. Off the keyboard, you’ll find me at the gym, on the trail, or with family.</p>
-        </div>
-        <div class="about-card">
-          <h3 class="h3">Now</h3>
-          <ul class="list">
-            <li>B.S. in Applied Computing (Cybersecurity)</li>
-            <li>IT Clinical Optimization Tech @ Phoenix Children’s</li>
-            <li>Service Desk & SecOps experience (AccountabilIT, Troon)</li>
-          </ul>
-        </div>
+      <div class="container">
+        <h2 class="h2">About</h2>
+        <p>I started in healthcare as an EMT and moved into technology, focusing on secure, straightforward software. I like shipping fast, writing clear docs, and keeping systems simple.</p>
       </div>
     </section>
 
     <section id="skills" class="section">
-      <div class="container reveal">
+      <div class="container">
         <h2 class="h2">Skills</h2>
         <ul class="tags">
-          <li>HTML</li><li>CSS</li><li>JavaScript</li><li>Sass</li><li>Java</li><li>MySQL</li>
-          <li>REST APIs</li><li>Spring Boot</li><li>Postman</li><li>Kali Linux</li><li>Burp Suite</li>
-          <li>Android</li><li>IntelliJ IDEA</li><li>Visual Studio</li>
+          <li>HTML</li><li>CSS</li><li>JavaScript</li><li>Java</li><li>MySQL</li>
+          <li>REST APIs</li><li>Spring Boot</li><li>Postman</li>
+          <li>Kali Linux</li><li>Burp Suite</li>
         </ul>
       </div>
     </section>
 
     <section id="projects" class="section">
-      <div class="container reveal">
+      <div class="container">
         <h2 class="h2">Projects</h2>
-        <div class="projects">
+        <div class="cards">
           <article class="card">
-            <div class="card__media">
-              <img src="./assets/jpeg/discord.jpeg" alt="Discord Music Bot screenshot" loading="lazy" />
-            </div>
-            <div class="card__body">
+            <img class="card-img" src="./assets/jpeg/discord.jpeg" alt="Discord Music Bot" loading="lazy" />
+            <div class="card-body">
               <h3 class="h3">Discord Music Bot</h3>
-              <p>Java bot using JDA; plays YouTube links via prefix commands when the user is in a voice channel.</p>
-              <a class="btn btn--sm" href="https://github.com/akarrys/musicbotbyAK" target="_blank" rel="noopener noreferrer">GitHub</a>
+              <p>Java + JDA. Plays YouTube links via prefix commands in voice channels.</p>
+              <a class="btn btn--sm" href="https://github.com/akarrys/musicbotbyAK" target="_blank" rel="noopener">GitHub</a>
             </div>
           </article>
 
           <article class="card">
-            <div class="card__media">
-              <img src="./assets/jpeg/slack.jpeg" alt="Slack bot screenshot" loading="lazy" />
-            </div>
-            <div class="card__body">
-              <h3 class="h3">Slack Bot (Cloudflare Workers)</h3>
-              <p>Serverless Slack bot that posts GitHub issue updates and supports an issue lookup slash command.</p>
-              <a class="btn btn--sm" href="https://github.com/akarrys/slackbotwithcloudflare" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <img class="card-img" src="./assets/jpeg/slack.jpeg" alt="Slack Bot" loading="lazy" />
+            <div class="card-body">
+              <h3 class="h3">Slack Bot (Workers)</h3>
+              <p>Cloudflare Workers. GitHub issue updates + slash command lookup.</p>
+              <a class="btn btn--sm" href="https://github.com/akarrys/slackbotwithcloudflare" target="_blank" rel="noopener">GitHub</a>
             </div>
           </article>
 
           <article class="card">
-            <div class="card__media">
-              <img src="./assets/jpeg/springboot.jpeg" alt="Spring Boot API screenshot" loading="lazy" />
-            </div>
-            <div class="card__body">
+            <img class="card-img" src="./assets/jpeg/springboot.jpeg" alt="Spring Boot API" loading="lazy" />
+            <div class="card-body">
               <h3 class="h3">MySQL CRUD REST API</h3>
-              <p>Java 17 + Spring Boot (Maven). MySQL backend; LDAP for auth; tested with Postman.</p>
-              <a class="btn btn--sm" href="https://github.com/akarrys/demo-rest-API-MySQL" target="_blank" rel="noopener noreferrer">GitHub</a>
+              <p>Java 17 + Spring Boot. MySQL backend; tested with Postman.</p>
+              <a class="btn btn--sm" href="https://github.com/akarrys/demo-rest-API-MySQL" target="_blank" rel="noopener">GitHub</a>
             </div>
           </article>
         </div>
@@ -146,17 +100,17 @@
     </section>
 
     <section id="contact" class="section">
-      <div class="container reveal">
+      <div class="container">
         <h2 class="h2">Contact</h2>
-        <p class="muted">Let’s connect — I’m open to software and security-focused roles.</p>
+        <p class="muted">Open to software + security-focused roles.</p>
         <div class="cta">
-          <a class="btn" href="assets/pdf/KarrysResume.pdf" download="KarrysResume.pdf">Download Résumé</a>
+          <a class="btn" href="assets/pdf/KarrysResume.pdf" download>Download Résumé</a>
           <div class="socials">
-            <a href="https://www.linkedin.com/in/artamiskarrys/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-              <img src="./assets/png/linkedinsocial.png" alt="" width="28" height="28" />
+            <a href="https://www.linkedin.com/in/artamiskarrys/" target="_blank" rel="noopener">
+              <img src="./assets/png/linkedinsocial.png" alt="LinkedIn" width="28" height="28" />
             </a>
-            <a href="https://github.com/akarrys" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-              <img src="./assets/png/githubsocial.png" alt="" width="28" height="28" />
+            <a href="https://github.com/akarrys" target="_blank" rel="noopener">
+              <img src="./assets/png/githubsocial.png" alt="GitHub" width="28" height="28" />
             </a>
           </div>
         </div>
@@ -167,15 +121,10 @@
   <footer class="site-footer">
     <div class="container footer-inner">
       <small>&copy; <span id="year"></span> Artamis Karrys</small>
-      <a href="https://artamiskarrys.com" target="_blank" rel="noopener noreferrer">artamiskarrys.com</a>
+      <a href="https://artamiskarrys.com" target="_blank" rel="noopener">artamiskarrys.com</a>
     </div>
   </footer>
 
-  <!-- Sticky FABs -->
-  <a class="fab-contact" href="#contact" aria-label="Jump to contact">Contact</a>
-  <button class="fab-top" aria-label="Back to top" title="Back to top" type="button">↑</button>
-
   <script src="index.js"></script>
-  <noscript><style>.reveal{opacity:1;transform:none}</style></noscript>
 </body>
 </html>
