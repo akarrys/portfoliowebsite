@@ -31,17 +31,34 @@
         <div class="nav__overlay" hidden></div>
 
         <ul id="nav-menu" class="nav__menu">
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#home" class="nav__link">Home</a></li>
+          <li><a href="#about" class="nav__link">About</a></li>
+          <li><a href="#skills" class="nav__link">Skills</a></li>
+          <li><a href="#projects" class="nav__link">Projects</a></li>
+          <li><a href="#contact" class="nav__link">Contact</a></li>
+          <li class="menu-item menu-item--has-dropdown">
+            <button class="dropdown__toggle" aria-haspopup="true" aria-expanded="false" aria-controls="more-submenu">
+              More
+              <span class="dropdown__caret" aria-hidden="true">▾</span>
+            </button>
+            <ul id="more-submenu" class="dropdown" hidden>
+              <li><a href="assets/pdf/KarrysResume.pdf" download="KarrysResume.pdf">Résumé (PDF)</a></li>
+              <li><a href="https://www.linkedin.com/in/artamiskarrys/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://github.com/akarrys" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+            </ul>
+          </li>
         </ul>
       </nav>
+
+      <!-- Theme toggle button -->
+      <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme" aria-pressed="false" title="Toggle theme">
+        <span class="theme-toggle__icon" aria-hidden="true">🌙</span>
+      </button>
     </div>
   </header>
 
-  <main id="home" id="content">
-    <section class="hero">
+  <main id="content">
+    <section id="home" class="hero">
       <div class="container hero-inner reveal">
         <h1 class="h1">Hello, I’m <span class="accent">Artamis Karrys</span>.</h1>
         <p class="lead">Software developer with a security mindset. I build reliable, maintainable systems and keep learning fast.</p>
@@ -146,6 +163,10 @@
       <a href="https://artamiskarrys.com" target="_blank" rel="noopener noreferrer">artamiskarrys.com</a>
     </div>
   </footer>
+
+  <!-- Sticky FABs -->
+  <a class="fab-contact" href="#contact" aria-label="Jump to contact">Contact</a>
+  <button class="fab-top" aria-label="Back to top" title="Back to top">↑</button>
 
   <script src="index.js"></script>
   <noscript><style>.reveal{opacity:1;transform:none}</style></noscript>
