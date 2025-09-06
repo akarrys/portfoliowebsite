@@ -6,6 +6,7 @@
   <meta name="theme-color" content="#0b0b0b" />
   <title>Artamis Karrys — Software Developer</title>
   <meta name="description" content="Portfolio of Artamis Karrys — software developer with a security mindset." />
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
@@ -14,7 +15,7 @@
 <body>
   <a class="skip-link" href="#content">Skip to content</a>
 
-  <header class="site-header">
+  <header class="site-header" id="site-header">
     <div class="container header-inner">
       <a href="#home" class="logo">
         <img src="./assets/png/mysiteimage.png" alt="Logo: Artamis Karrys" width="40" height="40" />
@@ -36,10 +37,16 @@
           <li><a href="#skills" class="nav__link">Skills</a></li>
           <li><a href="#projects" class="nav__link">Projects</a></li>
           <li><a href="#contact" class="nav__link">Contact</a></li>
+
+          <!-- More dropdown (works on mobile click & desktop hover/click) -->
           <li class="menu-item menu-item--has-dropdown">
-            <button class="dropdown__toggle" aria-haspopup="true" aria-expanded="false" aria-controls="more-submenu">
-              More
-              <span class="dropdown__caret" aria-hidden="true">▾</span>
+            <button
+              class="dropdown__toggle"
+              aria-haspopup="true"
+              aria-expanded="false"
+              aria-controls="more-submenu"
+              type="button">
+              More <span class="dropdown__caret" aria-hidden="true">▾</span>
             </button>
             <ul id="more-submenu" class="dropdown" hidden>
               <li><a href="assets/pdf/KarrysResume.pdf" download="KarrysResume.pdf">Résumé (PDF)</a></li>
@@ -51,7 +58,7 @@
       </nav>
 
       <!-- Theme toggle button -->
-      <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme" aria-pressed="false" title="Toggle theme">
+      <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme" aria-pressed="false" title="Toggle theme" type="button">
         <span class="theme-toggle__icon" aria-hidden="true">🌙</span>
       </button>
     </div>
@@ -166,7 +173,7 @@
 
   <!-- Sticky FABs -->
   <a class="fab-contact" href="#contact" aria-label="Jump to contact">Contact</a>
-  <button class="fab-top" aria-label="Back to top" title="Back to top">↑</button>
+  <button class="fab-top" aria-label="Back to top" title="Back to top" type="button">↑</button>
 
   <script src="index.js"></script>
   <noscript><style>.reveal{opacity:1;transform:none}</style></noscript>
