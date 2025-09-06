@@ -1,282 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Artamis Karrys</title>
-    <meta name="description" content="Portfolio for Artamis Karrys" />
-
-    <link rel="stylesheet" href="css/style.css" />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0b0b0b" />
+  <title>Artamis Karrys — Software Developer</title>
+  <meta name="description" content="Portfolio of Artamis Karrys — software developer with a security mindset." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
-
 <body>
-    <header class="header">
-        <div class="header__content">
-            <div class="header__logo-container">
-                <div class="header__logo-img-cont">
-                    <img src="./assets/png/mysiteimage.png" alt="Artamis Karrys Logo Image" class="header__logo-img" />
-                </div>
-                <span class="header__logo-sub">Artamis K.</span>
-            </div>
-            <nav class="header__main" aria-label="Primary">
-                <ul class="header__links">
-                    <li class="header__link-wrapper">
-                        <a href="./index.html" class="header__link"> Home </a>
-                    </li>
-                    <li class="header__link-wrapper">
-                        <a href="./index.html#about" class="header__link">About </a>
-                    </li>
-                    <li class="header__link-wrapper">
-                        <a href="./index.html#projects" class="header__link">
-                Projects
-              </a>
-                    </li>
-                    <li class="header__link-wrapper">
-                        <a href="./index.html#contact" class="header__link"> Contact </a>
-                    </li>
-                </ul>
-                <button class="header__main-ham-menu-cont" aria-label="Open menu" aria-controls="mobile-menu" aria-expanded="false">
-                    <img src="./assets/svg/ham-menu.svg" alt="" class="header__main-ham-menu" width="24" height="24" />
-                    <img src="./assets/svg/ham-menu-close.svg" alt="" class="header__main-ham-menu-close d-none" width="24" height="24" />
-                </button>
-            </nav>
-        </div>
-        <div class="header__sm-menu" id="mobile-menu">
-            <div class="header__sm-menu-content">
-                <ul class="header__sm-menu-links">
-                    <li class="header__sm-menu-link">
-                        <a href="./index.html"> Home </a>
-                    </li>
+  <a class="skip-link" href="#content">Skip to content</a>
 
-                    <li class="header__sm-menu-link">
-                        <a href="./index.html#about"> About </a>
-                    </li>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#home" class="logo">
+        <img src="./assets/png/mysiteimage.png" alt="Logo: Artamis Karrys" width="40" height="40" />
+        <span>Artamis K.</span>
+      </a>
 
-                    <li class="header__sm-menu-link">
-                        <a href="./index.html#projects"> Projects </a>
-                    </li>
+      <nav class="nav" aria-label="Primary">
+        <button class="nav__toggle" aria-controls="nav-menu" aria-expanded="false">
+          <img src="./assets/svg/ham-menu.svg" alt="" class="icon-open" width="24" height="24" />
+          <img src="./assets/svg/ham-menu-close.svg" alt="" class="icon-close" width="24" height="24" />
+          <span class="sr-only">Toggle menu</span>
+        </button>
 
-                    <li class="header__sm-menu-link">
-                        <a href="./index.html#contact"> Contact </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </header>
-    <section class="home-hero">
-        <div class="home-hero__content reveal">
-            <h1 class="heading-primary text-center"> Hello 👋, my name is Artamis Karrys.</h1>
-            <div class="home-hero__info">
-                <p class="text-primary text-center">
-                    Passionate software developer and cybersecurity student.
-                </p>
+        <div class="nav__overlay" hidden></div>
 
-            </div>
-            <div class="home-hero__cta">
-                <a href="#projects" class="btn btn--bg">Projects</a>
-            </div>
-        </div>
-        <div class="home-hero__socials" aria-label="Social links">
-            <div class="home-hero__social">
-                <a href="https://www.linkedin.com/in/artamiskarrys/" target="_blank" rel="noopener noreferrer" class="home-hero__social-icon-link" aria-label="LinkedIn>
-                    <img src="./assets/png/linkedinsocial.png" alt="" class="home-hero__social-icon width="32" height="32" />
-                </a>
-            </div>
-            <div class="home-hero__social">
-                <a href="https://github.com/akarrys" target="_blank" rel="noopener noreferrer" class="home-hero__social-icon-link" aria-label="GitHub">
-                    <img src="./assets/png/githubsocial.png" alt="" class="home-hero__social-icon" width="32" height="32" />
-                </a>
-            </div>
+        <ul id="nav-menu" class="nav__menu">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
+  <main id="home" id="content">
+    <section class="hero">
+      <div class="container hero-inner reveal">
+        <h1 class="h1">Hello, I’m <span class="accent">Artamis Karrys</span>.</h1>
+        <p class="lead">Software developer with a security mindset. I build reliable, maintainable systems and keep learning fast.</p>
+        <div class="cta">
+          <a class="btn" href="#projects">View Projects</a>
+          <a class="btn btn--ghost" href="assets/pdf/KarrysResume.pdf" download="KarrysResume.pdf">Download Résumé</a>
         </div>
-        <div class="home-hero__mouse-scroll-cont">
-            <div class="mouse" aria-hidden="true"></div>
-        </div>
+      </div>
     </section>
-    <section id="about" class="about sec-pad">
-        <div class="main-container">
-            <h2 class="heading heading-sec heading-sec__mb-med">
-                <span class="heading-sec__main">About Me</span>
-                <span class="heading-sec__sub">Here is where you will find out info about me, programming skills, and what I primarily do on my days away from technology.
 
-          
-        
-          </span>
-            </h2>
-            <div class="about__content reveal">
-                <div class="about__content-main">
-                    <h3 class="about__content-title">Bio:</h3>
-                    <div class="about__content-details">
-                        <p class="about__content-details-para">
-                            Hello my name is Artamis Karrys I am a dual citizen and a conjoined twin by the liver. I grew up playing hockey primarily. My current activites outside of tech include going to the gym, building PC's, hiking, and spending time with my family.
-                        </p>
-                        <p class="about__content-details-para">
-                            After my career in healthcare as an EMT for 2 years and being a hockey player for 15 years, I decided to pursue my passion for technology. I have always considered myself a learner and I continue to study and apply new concepts everyday. I started to
-                            lose passion for healthcare near the end of my career which turned me to helping others electronically.
-                        </p>
-                        <p class="about__content-details-para">My first programming language was Java. I fell in love with the process of learning software development principles. I then started doing projects based on whatever I found interesting and challenging. There is no greater feeling
-                            than creating a secure, efficient, robust, and adaptable program to display as your own.</p>
-                        <p class="about__content-details-para">I started to develop over time more and more projects. I then found a keen interest in cybersecurity. I decided to start learning and applying ethical hacking principles. Ive practiced pen testing for friends websites with consent.
-                            I currently use Kali Linux for my practice environment. I am currently enrolled in college and going into my junior year. I am pursuing a BSc in Cybersecurity. My projected graduation is May 2024.
-                        </p>
-                    </div>
-                    <a href="./#contact" class="btn btn--med btn--theme dynamicBgClr">Contact</a
-            >
-          </div>
-          <div class="about__content-skills">
-            <h3 class="about__content-title">My Skills</h3>
-            <div class="skills">
-              <div class="skills__skill">HTML</div>
-              <div class="skills__skill">CSS</div>
-              <div class="skills__skill">JavaScript</div>
-              <div class="skills__skill">SASS</div>
-              <div class="skills__skill">Java</div>
-              <div class="skills__skill">MySQL</div>
-              <div class="skills__skill">Postman</div>
-              <div class="skills__skill">Kali Linux</div>
-              <div class="skills__skill">Android</div>
-              <div class="skills__skill">Burpsuite</div>
-              <div class="skills__skill">Web Development</div>
-              <div class="skills__skill">IntellijIDE</div>
-              <div class="skills__skill">Visual Studio</div>
-              <div class="skills__skill">Rest API's</div>
-              <div class="skills__skill">Spring boot</div>
+    <section id="about" class="section">
+      <div class="container grid grid-2 reveal">
+        <div>
+          <h2 class="h2">About Me</h2>
+          <p>I started my career in healthcare as an EMT, then moved into technology where I found a passion for secure software development and practical problem-solving.</p>
+          <p>Today I focus on building clean, resilient software and supporting teams with clear documentation and communication. Off the keyboard, you’ll find me at the gym, on the trail, or with family.</p>
+        </div>
+        <div class="about-card">
+          <h3 class="h3">Now</h3>
+          <ul class="list">
+            <li>B.S. in Applied Computing (Cybersecurity)</li>
+            <li>IT Clinical Optimization Tech @ Phoenix Children’s</li>
+            <li>Service Desk & SecOps experience (AccountabilIT, Troon)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
+    <section id="skills" class="section">
+      <div class="container reveal">
+        <h2 class="h2">Skills</h2>
+        <ul class="tags">
+          <li>HTML</li><li>CSS</li><li>JavaScript</li><li>Sass</li><li>Java</li><li>MySQL</li>
+          <li>REST APIs</li><li>Spring Boot</li><li>Postman</li><li>Kali Linux</li><li>Burp Suite</li>
+          <li>Android</li><li>IntelliJ IDEA</li><li>Visual Studio</li>
+        </ul>
+      </div>
+    </section>
 
-
-
-
+    <section id="projects" class="section">
+      <div class="container reveal">
+        <h2 class="h2">Projects</h2>
+        <div class="projects">
+          <article class="card">
+            <div class="card__media">
+              <img src="./assets/jpeg/discord.jpeg" alt="Discord Music Bot screenshot" loading="lazy" />
             </div>
+            <div class="card__body">
+              <h3 class="h3">Discord Music Bot</h3>
+              <p>Java bot using JDA; plays YouTube links via prefix commands when the user is in a voice channel.</p>
+              <a class="btn btn--sm" href="https://github.com/akarrys/musicbotbyAK" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__media">
+              <img src="./assets/jpeg/slack.jpeg" alt="Slack bot screenshot" loading="lazy" />
+            </div>
+            <div class="card__body">
+              <h3 class="h3">Slack Bot (Cloudflare Workers)</h3>
+              <p>Serverless Slack bot that posts GitHub issue updates and supports an issue lookup slash command.</p>
+              <a class="btn btn--sm" href="https://github.com/akarrys/slackbotwithcloudflare" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__media">
+              <img src="./assets/jpeg/springboot.jpeg" alt="Spring Boot API screenshot" loading="lazy" />
+            </div>
+            <div class="card__body">
+              <h3 class="h3">MySQL CRUD REST API</h3>
+              <p>Java 17 + Spring Boot (Maven). MySQL backend; LDAP for auth; tested with Postman.</p>
+              <a class="btn btn--sm" href="https://github.com/akarrys/demo-rest-API-MySQL" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container reveal">
+        <h2 class="h2">Contact</h2>
+        <p class="muted">Let’s connect — I’m open to software and security-focused roles.</p>
+        <div class="cta">
+          <a class="btn" href="assets/pdf/KarrysResume.pdf" download="KarrysResume.pdf">Download Résumé</a>
+          <div class="socials">
+            <a href="https://www.linkedin.com/in/artamiskarrys/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <img src="./assets/png/linkedinsocial.png" alt="" width="28" height="28" />
+            </a>
+            <a href="https://github.com/akarrys" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <img src="./assets/png/githubsocial.png" alt="" width="28" height="28" />
+            </a>
           </div>
         </div>
       </div>
     </section>
-    <section id="projects" class="projects sec-pad">
-      <div class="main-container">
-        <h2 class="heading heading-sec heading-sec__mb-bg">
-          <span class="heading-sec__main">Projects</span>
-          <span class="heading-sec__sub">
-            A collection of all my personal projects that are also on github.
-          </span>
-        </h2>
+  </main>
 
-        <div class="projects__content reveal">
-          <div class="projects__row reveal">
-            <div class="projects__row-img-cont">
-              <img
-                src="./assets/jpeg/discord.jpeg"
-                alt="Software Screenshot"
-                class="projects__row-img"
-                loading="lazy"
-              />
-            </div>
-            <div class="projects__row-content">
-              <h3 class="projects__row-content-title">Discord Music Bot</h3>
-              <p class="projects__row-content-desc">
-                Discord Music Bot made with discord developer portal. The bot takes a prefix command + a youtube link and plays the song linked in any channel as long as user is in voice channel. The bot was programmed in Java and uses Discords wrapper JDA. Discord bot is available on github.
-              </p>
-              <a
-                href="https://github.com/akarrys/musicbotbyAK"
-                class="btn btn--med btn--theme dynamicBgClr"
-                target="_blank" rel="noopener noreferrer">
-                >github</a
-              >
-            </div>
-          </div>
-          <div class="projects__row reveal">
-            <div class="projects__row-img-cont">
-              <img
-                src="./assets/jpeg/slack.jpeg"
-                alt="Software Screenshot"
-                class="projects__row-img"
-                loading="lazy"
-              />
-            </div>
-            <div class="projects__row-content">
-              <h3 class="projects__row-content-title">Slack Bot</h3>
-              <p class="projects__row-content-desc">
-                Simple slack robot made using Cloudflares workers and Cloudflares Wrangler CLI. The bot was written in java script. Bot makes use of GitHub webhooks to send messages to a Slack channel when issues are updated or created, and allow users to write a command to look up GitHub issues from inside Slack. The bot is hosted serverless and able to be summoned 24/7. Summoned by using this syntax, /issue owner/repo#issue_number.
-              </p>
-              <a
-                href="https://github.com/akarrys/slackbotwithcloudflare"
-                class="btn btn--med btn--theme dynamicBgClr"
-                target="_blank" rel="noopener noreferrer">
-                >github</a
-              >
-            </div>
-          </div>
-          <div class="projects__row reveal">
-            <div class="projects__row-img-cont">
-              <img
-                src="./assets/jpeg/springboot.jpeg"
-                alt="Software Screenshot"
-                class="projects__row-img"
-                loading="lazy"
-              />
-            </div>
-            <div class="projects__row-content">
-              <h3 class="projects__row-content-title">MySQL Crud Rest Api Spring Boot application.
-              </h3>
-              <p class="projects__row-content-desc">
-               First REST api project created to learn and apply an understanding of Spring restful services. This project was made with Java Version 17 and Spring Boot with Maven for a POM. Used MySQL for DB and lDAP for connection, no SSH. Api calls were made with Postman. Dependencies: 1. Thymeleaf 2. Spring data jpa 3. MySQL driver 4. Lombok.
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <small>&copy; <span id="year"></span> Artamis Karrys</small>
+      <a href="https://artamiskarrys.com" target="_blank" rel="noopener noreferrer">artamiskarrys.com</a>
+    </div>
+  </footer>
 
-              </p>
-              <a
-                href="https://github.com/akarrys/demo-rest-API-MySQL"
-                class="btn btn--med btn--theme dynamicBgClr"
-                target="_blank" rel="noopener noreferrer">
-                >github</a
-              >
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="contact" class="contact sec-pad dynamicBg">
-      <div class="main-container">
-        <h2 class="heading heading-sec heading-sec__mb-med">
-          <span class="heading-sec__main heading-sec__main--lt">Contact</span>
-          <span class="heading-sec__sub heading-sec__sub--lt">
-            Click download to download resume.
-            <a href="assets/pdf/KarrysResume.pdf" download="KarrysResume.pdf" class="btn btn--med btn--theme">Download Resume</a>
-          </span>
-        </h2>
-        </div>
-    </section>
-    <footer class="main-footer">
-        <div class="main-container">
-            <div class="main-footer__upper reveal">
-                <div class="main-footer__row main-footer__row-1">
-                    <h2 class="heading heading-sm main-footer__heading-sm">
-                        <span>Social</span>
-                    </h2>
-                    <div class="main-footer__social-cont">
-                        <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/artamiskarrys/" aria-label="LinkedIn">
-                            <img class="main-footer__icon" src="./assets/png/linkedinsocial.png" alt="" width="24" height="24" />
-                        </a>
-                        <a target="_blank" rel="noreferrer" href="https://github.com/akarrys" aria-label="GitHub">
-                            <img class="main-footer__icon" src="./assets/png/githubsocial.png" alt="" width="24" height="24" />
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="main-footer__lower">
-                &copy; Copyright 2022. Made by
-                <a rel="noreferrer" target="_blank" href="https://artamiskarrys.com">Artamis Karrys</a
-          >
-        </div>
-      </div>
-    </footer>
-
-    <script src="./index.js"></script>
-    <script src="scripts/scripts.js"></script>
-  </body>
+  <script src="index.js"></script>
+  <noscript><style>.reveal{opacity:1;transform:none}</style></noscript>
+</body>
 </html>
