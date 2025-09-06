@@ -1,27 +1,31 @@
-// Header nav: toggle mobile menu and accessibility hooks
+// Mobile nav: toggle + accessibility + overlay close
 (function(){
   const nav = document.querySelector('.nav');
   const toggle = document.querySelector('.nav__toggle');
   const menu = document.getElementById('nav-menu');
+  const overlay = document.querySelector('.nav__overlay');
 
-  if(!nav || !toggle || !menu) return;
+  if(!nav || !toggle || !menu || !overlay) return;
 
   const open = () => {
     nav.classList.add('is-open');
     toggle.setAttribute('aria-expanded', 'true');
+    overlay.hidden = false;
     document.body.classList.add('no-scroll');
   };
   const close = () => {
     nav.classList.remove('is-open');
     toggle.setAttribute('aria-expanded', 'false');
+    overlay.hidden = true;
     document.body.classList.remove('no-scroll');
   };
   const isOpen = () => nav.classList.contains('is-open');
 
   toggle.addEventListener('click', () => (isOpen() ? close() : open()));
+  overlay.addEventListener('click', close);
   document.addEventListener('keydown', (e) => { if(e.key === 'Escape') close(); });
 
-  // close when clicking a link
+  // Close when clicking a nav link (mobile)
   menu.querySelectorAll('a').forEach(a => a.addEventListener('click', close));
 })();
 
@@ -42,4 +46,7 @@
 })();
 
 // Year in footer
-document.getElementById('year').textContent = new Date().getFullYear();
+(function(){
+  const y = document.getElementById('year');
+  if (y) y.textContent = new Date().getFullYear();
+})();
