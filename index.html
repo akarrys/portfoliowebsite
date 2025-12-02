@@ -2,21 +2,22 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>Artamis Karrys – Portfolio</title>
 
   <!-- favicon -->
-  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon" />
 
-  <!-- custom css link -->
-  <link rel="stylesheet" href="./assets/css/style.css">
+  <!-- core css -->
+  <link rel="stylesheet" href="./assets/css/style.css" />
 
-  <!-- google font link -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
 </head>
 
 <body>
@@ -36,101 +37,113 @@
     </div>
   </header>
 
-  <!-- HOME / HERO -->
-  <section id="home" class="home">
+  <!-- HOME -->
+  <section class="hero" id="home">
     <div class="container">
-      <div class="home-content">
-        <h1>Artamis Karrys</h1>
-        <h3>Cybersecurity & IT Professional</h3>
-        <p>
-          I specialize in cybersecurity analysis, malware investigation, network forensics, and building 
-          clean, stable backend systems. My work spans SOC operations, offensive security labs, and 
-          enterprise IT optimization.
-        </p>
-      </div>
+      <h1>Artamis Karrys</h1>
+      <h2>Cybersecurity & IT Professional</h2>
+      <p>
+        I specialize in cybersecurity analysis, malware investigation, network forensics,
+        and building clean, stable backend systems. My work spans SOC operations,
+        offensive security labs, and enterprise IT optimization.
+      </p>
     </div>
   </section>
 
   <!-- ABOUT -->
-  <section id="about" class="about">
+  <section class="about section" id="about">
     <div class="container">
-      <h2>About Me</h2>
+      <h2 class="section-title">About Me</h2>
       <p>
-        I'm a cybersecurity and IT professional with hands-on experience in SOC alert triage, 
+        I'm a cybersecurity and IT professional with hands-on experience in SOC alert triage,
         wireless network forensics, VirtualBox networking, and reverse engineering malicious scripts.
-        My background includes analyzing Defender and Entra ID logs, building REST APIs, developing 
-        automation-focused Discord bots, and creating streamlined Android applications.
-        <br><br>
-        I focus on making technical systems more secure, efficient, and understandable. Whether I’m 
-        dissecting a malware sample, analyzing an EAPOL handshake, or building backend logic for an app, 
-        I bring structure, clarity, and precision to every project.
+        My background includes analyzing Microsoft Defender and Entra ID logs, building REST APIs,
+        developing automation-focused Discord bots, and creating streamlined Android applications.
+      </p>
+      <br />
+      <p>
+        I focus on making technical systems more secure, efficient, and understandable.
+        Whether I’m dissecting a malware sample, analyzing an EAPOL handshake, or building backend
+        logic for an app, I bring structure, clarity, and precision to every project.
       </p>
     </div>
   </section>
 
   <!-- RESUME -->
-  <section id="resume" class="resume">
+  <section class="resume section" id="resume">
     <div class="container">
-      <h2>Resume</h2>
-      <a href="./assets/Karrys_Artamis_Resume.pdf" class="btn" target="_blank">Download Resume</a>
+      <h2 class="section-title">Resume</h2>
+
+      <a href="./assets/resume/Artamis_Karrys_SOC_Resume.pdf" class="btn" download>
+        Download Resume
+      </a>
+
+      <p style="margin-top: 10px;">
+        (Upload your PDF to <code>assets/resume/</code> and rename it accordingly.)
+      </p>
     </div>
   </section>
 
   <!-- PROJECTS -->
-  <section id="projects" class="portfolio">
+  <section class="projects section" id="projects">
     <div class="container">
-      <h2>Projects</h2>
+      <h2 class="section-title">Projects</h2>
 
-      <div class="portfolio-grid">
-
-        <!-- CRUD API Project -->
-        <div class="portfolio-item">
-          <img src="./assets/images/project1.jpg" alt="CRUD API">
+      <!-- CRUD API -->
+      <div class="project-card">
+        <img src="./assets/images/crudapi.png" alt="CRUD API" class="project-img" />
+        <div class="project-info">
           <h3>CRUD API (REST Backend)</h3>
           <p>
-            Built a full CRUD REST API with structured endpoints, clean routing, and JSON responses. 
-            Focused on scalability, validation, and backend architecture best practices.
+            Built a full CRUD REST API using structured endpoints, validation logic,
+            and clean JSON responses. Focused on scalability and backend architecture best practices.
           </p>
           <a href="https://github.com/akarrys/CRUD-API" target="_blank" class="btn">View Code</a>
         </div>
+      </div>
 
-        <!-- Discord Bot -->
-        <div class="portfolio-item">
-          <img src="./assets/images/project2.jpg" alt="Discord Bot">
+      <!-- Discord Bot -->
+      <div class="project-card">
+        <img src="./assets/images/discord.png" alt="Discord Bot" class="project-img" />
+        <div class="project-info">
           <h3>Discord Bot</h3>
           <p>
-            Developed a modular Discord bot with command handling, event listeners, automated moderation, 
-            and utility features. Designed for maintainability and extensibility.
+            Developed a modular Discord bot with command handling, event listeners,
+            automated moderation, and extensible utilities. Designed for maintainability and clarity.
           </p>
           <a href="https://github.com/akarrys/Discord-Bot" target="_blank" class="btn">View Code</a>
         </div>
+      </div>
 
-        <!-- Portfolio Website -->
-        <div class="portfolio-item">
-          <img src="./assets/images/project3.jpg" alt="Portfolio Website">
+      <!-- Portfolio Website -->
+      <div class="project-card">
+        <img src="./assets/images/portfolio.png" alt="Portfolio Website" class="project-img" />
+        <div class="project-info">
           <h3>Portfolio Website</h3>
           <p>
-            Designed and deployed this personal portfolio using GitHub + Cloudflare Pages. 
-            Built with responsive UI, clean layout, and automated deployment workflows.
+            Designed and deployed this personal portfolio using GitHub + Cloudflare Pages.
+            Clean UI, responsive layout, and automated CI/CD workflow.
           </p>
           <a href="https://github.com/akarrys/portfoliowebsite" target="_blank" class="btn">View Code</a>
         </div>
+      </div>
 
-        <!-- Android App -->
-        <div class="portfolio-item">
-          <img src="./assets/images/project4.jpg" alt="Android App">
+      <!-- Android App -->
+      <div class="project-card">
+        <img src="./assets/images/android.png" alt="Android App" class="project-img" />
+        <div class="project-info">
           <h3>Android App</h3>
           <p>
-            Created an Android application with clean UI components, activity navigation, and 
-            responsive interaction logic. Focused on modern Android development workflow.
+            Created an Android application with structured navigation, activity management, and clean UI components.
           </p>
-          <a href="https://github.com/akarrys/AndroidApp" target="_blank" class="btn">View Code</a>
+          <a href="https://github.com/akarrys/Android-App" target="_blank" class="btn">View Code</a>
         </div>
-
       </div>
+
     </div>
   </section>
 
+  <script src="./assets/js/main.js"></script>
 </body>
 
 </html>
